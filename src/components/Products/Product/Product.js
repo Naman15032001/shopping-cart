@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-// import { connect } from "react-redux";
+ import { connect } from "react-redux";
 import { useHistory } from "react-router-dom";
 // import {
-//   loadCurrentItem,
+  // loadCurrentItem,
 //   addToCart,
 // } from "../../../redux/Shopping/shopping-actions";
 import { makeStyles } from '@material-ui/core/styles';
@@ -71,6 +71,13 @@ function Product2({ product, addToCart, loadCurrentItem }) {
         </CardActions>
       </Card>
     )
+}
+
+const mapDispatchToProps = (dispatch)=>{
+
+  return{
+    handleOnClick
+  }
 }
 
 export default Product2
