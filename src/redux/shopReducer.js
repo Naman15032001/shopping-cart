@@ -58,10 +58,10 @@ const shopReducer = (state = initialState, action) => {
                     [...state.cart, { ...item, qty: 1 }]
             }
 
-        case LOAD_CURRENT_ITEM:
+        case LOAD_CURRENT_ITEM: 
             return {
                 ...state,
-                currItem: action.payload.item
+                currItem : action.payload.item
             }
 
         default:
